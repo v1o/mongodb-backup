@@ -40,3 +40,7 @@ See the list of backups, you can run:
 To restore database from a certain backup, simply run:
 
     docker exec tutum-backup /restore.sh /backup/2015.08.06.171901
+
+
+## Build Docker Tag
+docker buildx build --compress --platform linux/amd64 . --progress=plain --push -t v1oo/mongodb-backup:0.0.1
